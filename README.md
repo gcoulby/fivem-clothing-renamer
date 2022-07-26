@@ -2,7 +2,13 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 # Getting Started
 
-## Build / Run Docker container:
+## Using Docker:
+### Edit the enviroment variables:
+```bash
+cp .env.example .env
+nano .env
+```
+### Build / Run the docker conatiner:
 ```bash
 docker build -t fivem-clothing-renamer .
 docker run -d --name fivem-clothing-renamer -p 3000:3000 fivem-clothing-renamer
