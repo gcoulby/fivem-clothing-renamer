@@ -1,19 +1,16 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Getting Started
 
-### DOCKER
-
+## Build / Run Docker container:
 ```bash
-docker build -t five-clothing
+docker build -t fivem-clothing-renamer .
+docker run -d --name fivem-clothing-renamer -p 3000:3000 fivem-clothing-renamer
 ```
 
-```bash
-docker run -d --name fivem-clothing -p 3000:3000 fivem-clothing
-```
+---
 
-First, run the development server:
-
+## Runing the development server:
 ```bash
 npm run dev
 # or
